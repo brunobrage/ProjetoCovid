@@ -4,10 +4,10 @@ import '../cidadao.dart';
 import 'package:http/http.dart' as http;
 
 class UserService {
-  static const ADD_URL = 'https://192.168.0.111/ProjetoCovid/add.php';
-  static const VIEW_URL = 'https://192.168.0.111/ProjetoCovid/view.php';
-  static const UPDATE_URL = 'https://192.168.0.111/ProjetoCovid/update.php';
-  static const DELETE_URL = 'https://192.168.0.111/ProjetoCovid/delete.php';
+  static const ADD_URL = 'https://localhost/ProjetoCovid/add.php';
+  static const VIEW_URL = 'https://localhost/ProjetoCovid/view.php';
+  static const UPDATE_URL = 'https://localhost/ProjetoCovid/update.php';
+  static const DELETE_URL = 'https://localhost/ProjetoCovid/delete.php';
 
   Future<String> addUser(Cidadao cidadao) async {
     final response =
